@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    
+    <title>For You</title>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-8">
+                <form id="regForm">
+                    <h1 id="register">Khabri</h1>
+                    <div class="all-steps" id="all-steps"> <span class="step"><i class="fa fa-user"></i></span>
+                        <img src="spy.png"  width="100" class=" "></div>
+                    <div class="tab">
+                        <h2>Write your Info</h2>
+                        <p> <input placeholder="Name..." oninput="this.className = ''" name="fname"></p>
+                    </div>
+                    
+                    <div class="thanks-message text-center" id="text-message"> <img src="tick.jpg"  width="100" class="center">
+                        <h1>Thankyou for your feedback!</h1> 
+                        <h1>Thanks for your valuable information. It helps us to improve our services!</h1>
+                        
+                    </div>
+                    <div style="overflow:auto;" id="nextprevious">
+                        <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-double-left"></i></button> <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
