@@ -5,11 +5,11 @@
   width: 100
 }
 body {
-    background: #eee
+    background: rgb(0, 0, 0)
 }
 
 #regForm {
-    background-color: #ffffff;
+    background-color: transparent;
     margin: 0px auto;
     font-family: Raleway;
     padding: 40px;
@@ -17,11 +17,11 @@ body {
 }
 
 #register {
-    color: #6A1B9A
+    color: rgb(50, 99, 2)
 }
 
 h1 {
-    text-align: center
+    text-align: center 
 }
 
 input {
@@ -37,12 +37,12 @@ input {
 }
 
 .tab input:focus {
-    border: 1px solid #6a1b9a !important;
+    border: 1px solid rgb(50, 99, 2) !important;
     outline: none
 }
 
 input.invalid {
-    border: 1px solid #e03a0666
+    border: 3px solid #ff0000b7
 }
 
 .tab {
@@ -51,7 +51,7 @@ input.invalid {
 }
 
 button {
-    background-color: #6A1B9A;
+    background-color: rgb(50, 99, 2);
     color: #ffffff;
     border: none;
     border-radius: 50%;
@@ -93,7 +93,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-    color: #6a1b9a;
+    color: rgb(50, 99, 2);
     opacity: 0.5
 } */
 
@@ -103,7 +103,7 @@ button:focus {
 
 .step.finish {
     color: #fff;
-    background: #6a1b9a;
+    background: rgb(50, 99, 2);
     opacity: 1
 }
 
@@ -114,5 +114,5 @@ button:focus {
 }
 
 .thanks-message {
-    display: none
+    display: none;
 }
