@@ -1,4 +1,4 @@
-##You Need to execute following commands initially.##  
+##You Need to execute following commands initially.
 
 
 pip3 install django
