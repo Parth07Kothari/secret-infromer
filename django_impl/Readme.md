@@ -11,3 +11,6 @@ python manage.py migrate
 python manage.py runserver
 ```
 #### Now you are good to go,
+
+![](FrontPage.png)
+![](AdminPage.png)
