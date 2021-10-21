@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For you</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <script src="{% static 'index.js' %}"></script>
+    
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body" style="background-color: black;">
+                            <form id="regForm" action="" method="POST" class="post-form" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <h1 id="register">Khabri</h1>
+                                <div class="all-steps" id="all-steps">
+                                    <span class="step">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                    <img src="{% static 'spy1.png' %}" width="200" class=" ">
+                                </div>
+
+                                <div class="tab">
+                                    <div class="form-group" style="color: aliceblue;">
+                                        <h2 style="color: rgb(50, 99, 2);">Write your Info</h2>
+                                        <p> <input name='Information' placeholder="Type your message here" class="form-control" id="exampleFormControlTextarea1" required></p>
+                                    </div>
+                                    <div class="form-group" style="color: aliceblue;">
+                                        <h2 style="color: rgb(50, 99, 2);">You can upload any visual proof here</h2>
+                                        <p><input type="file" name='File_n' class="form-control-file" id="exampleFormControlFile1">
+                                        <script>
+                                            document.getElementById("exampleFormControlFile1").required = false;
+                                        </script></p>
+                                    </div>
+                                    <input class="btn btn-primary" type="submit" value="Submit" style="width:80px; overflow: hidden; background-color: rgb(50, 99, 2); " >
+                                </div>
+                            </form>
+                        </div>
+
+                    
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>

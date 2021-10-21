@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For You</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-8">
+                <form id="regForm">
+
+                    <h1 id="register">Khabri</h1>
+                    <div class="all-steps" id="all-steps"> 
+                        <span class="step">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <img src="spy1.png"  width="200" class=" ">
+                    </div>
+
+                    <div class="tab">
+                        <div class="form-group" style="color: aliceblue;">
+                            <h2 style = "color: rgb(50, 99, 2);">Write your Info</h2>
+                            <p> <input placeholder="Type your message here" name='Information' class="form-control" id="exampleFormControlTextarea1"></p>
+                        </div>
+                        <div class="form-group" style="color: aliceblue;">
+                            <h2 style="color: rgb(50, 99, 2);">Phone Number</h2>
+                            <p> <input name = 'Phone_no' placeholder="Type your number"></p>
+                        </div>
+                        <div class="form-group" style="color: aliceblue;"> 
+                            <h2 style="color: rgb(50, 99, 2);">You can upload any visual proof here</h2>
+                            <p><input type="file" name='File_n' class="form-control-file" id="exampleFormControlFile1"></p>
+                        </div>
+                    </div>        
+                   
+                    <div style="overflow:auto;" id="nextprevious">
+                        <div style="float:right;"> 
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit<i class="fa fa-angle-double-right"></i></button> 
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="thanks-message text-center" id="text-message" style="color: black;">
+                    <img src="tick1.jpg" width="100" class="center">
+                    <h1 style="color: rgb(50, 99, 2);">Message Delivered Successfully!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
